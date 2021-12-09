@@ -4,12 +4,12 @@ const resulttEl = document.getElementById('result');
 async function getData(query, format, ytsearch) {
     const APIUrl = 'https://dev02-ydl-api.herokuapp.com/api/info';
     if (ytsearch) {
-        const url = APIUrl + '?url=ytsearch:' + query + '&format=' + format
+        const url = APIUrl + '?url=ytsearch:' + query + '&format=' + format;
         const res = await fetch(url);
         const json = await res.json();
         return [json.info.entries[0], url];
     } else {
-        const url = APIUrl + '?url=' + query + '&format=' + format
+        const url = APIUrl + '?url=' + query + '&format=' + format;
         const res = await fetch(url);
         const json = await res.json();
         return [json.info, url];
