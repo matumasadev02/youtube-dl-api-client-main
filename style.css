@@ -1,0 +1,26 @@
+.hidden {
+    display: none;
+}
+#loading span::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 96%);
+  border-top-color: hsl(171, 100%, 41%);
+  animation: spin 1s linear infinite;
+  margin: 20px;
+}
+#description {
+  line-height: 1.7;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
