@@ -64,4 +64,4 @@ document.getElementById('btn').addEventListener('click', async () => {
     loadingEl.classList.add('hidden');
     // show result
     resulttEl.classList.remove('hidden');
-})
+});
